@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pumpkinpals",
+	"version": "${version}",
+	"name": "Pumpkin Pals",
+	"description": "Pumpkin Pals Server Side Mod for custom shops through any entity",
+	"authors": [
+		"AntarcticVR"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/AntarcticVR/Pumpkin-Pals"
+	},
+	"license": "MIT",
+	"icon": "assets/pumpkinpals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.antarcticvr.pumpkinpals.PumpkinPals"
+		],
+		"fabric-datagen": [
+			"com.antarcticvr.pumpkinpals.PumpkinPalsDataGenerator"
+		],
+		"client": [
+			"com.antarcticvr.pumpkinpals.PumpkinPalsClient"
+		]
+	},
+	"mixins": [
+		"pumpkinpals.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
